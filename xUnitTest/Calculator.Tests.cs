@@ -22,7 +22,7 @@ public class CalculatorTest {
         Calculator calc = new();
         float a = 5;
         float b = 2;
-        int expectedResult = 5;
+        float expectedResult = 3;
 
         //when
         float result = calc.Subtract(a,b);
@@ -52,12 +52,12 @@ public class CalculatorTest {
 
         // given
         Calculator calc = new();
-        decimal a = 5;
-        decimal b = 2;
-        int expectedResult = 2;
+        double a = 5;
+        double b = 2;
+        double expectedResult = 2.5;
 
         //when
-        decimal result = calc.Division(a,b);
+        double result = calc.Division(a,b);
 
         //then
         Assert.Equal(expectedResult, result);

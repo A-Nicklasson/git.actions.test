@@ -9,7 +9,7 @@ public class Calculator {
     public int Multiply(int a, int b) { 
         return a * b;
     }
-    public decimal Division(decimal a, decimal b) { 
+    public double Division(double a, double b) { 
         
         if (b == 0) {
             throw new ArgumentException("Kan inte vara 0.", nameof(b));
